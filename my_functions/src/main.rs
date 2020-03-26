@@ -1,7 +1,9 @@
 fn main() {
     // Functions
-    let x = 1;
-    stuff();
+    let mut x = 1;
+    println!("before function: {}", x);
+    x = stuff(x);
+    println!("After function: {}", x);
     // ## Statements
     // - ';'
     // - do not return a value.
@@ -9,7 +11,7 @@ fn main() {
     // - no ';' have a 'return' keyword
 }
 
-fn stuff() {
-    println!("Inside of function!");
-    
+fn stuff(x: u8) -> u8 {
+    println!("Inside of function: {}", x);
+    x+1
 }
