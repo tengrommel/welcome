@@ -1,7 +1,10 @@
 fn main() {
-    let x = 5;
     // s = s + ", how about you "; we can't do that
     let mut s = String::from("hello");
-    s.push_str(", world");
-    println!("{}", s);
+    let s2 = s;
+    // s2 comes into scope s1 give ownership to s2
+    // println!("{}", s); // error
+    println!("{}", s2); // error
 }
+// double free error
+// owner ship  s1 move to s2
