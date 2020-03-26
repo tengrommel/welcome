@@ -26,11 +26,16 @@
       <sourceFolder url="file://$MODULE_DIR$/references/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/references/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/references/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/slice_type/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/slice_type/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/slice_type/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/slice_type/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/control_flow/target" />
       <excludeFolder url="file://$MODULE_DIR$/main/target" />
       <excludeFolder url="file://$MODULE_DIR$/my_functions/target" />
       <excludeFolder url="file://$MODULE_DIR$/ownership/target" />
       <excludeFolder url="file://$MODULE_DIR$/references/target" />
+      <excludeFolder url="file://$MODULE_DIR$/slice_type/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
