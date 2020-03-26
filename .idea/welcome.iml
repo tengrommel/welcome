@@ -34,7 +34,12 @@
       <sourceFolder url="file://$MODULE_DIR$/ostructs/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ostructs/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/ostructs/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/enum_pattern_matching/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/enum_pattern_matching/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/enum_pattern_matching/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/enum_pattern_matching/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/control_flow/target" />
+      <excludeFolder url="file://$MODULE_DIR$/enum_pattern_matching/target" />
       <excludeFolder url="file://$MODULE_DIR$/main/target" />
       <excludeFolder url="file://$MODULE_DIR$/my_functions/target" />
       <excludeFolder url="file://$MODULE_DIR$/ostructs/target" />
