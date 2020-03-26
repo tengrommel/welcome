@@ -30,9 +30,14 @@
       <sourceFolder url="file://$MODULE_DIR$/slice_type/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/slice_type/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/slice_type/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ostructs/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ostructs/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ostructs/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ostructs/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/control_flow/target" />
       <excludeFolder url="file://$MODULE_DIR$/main/target" />
       <excludeFolder url="file://$MODULE_DIR$/my_functions/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ostructs/target" />
       <excludeFolder url="file://$MODULE_DIR$/ownership/target" />
       <excludeFolder url="file://$MODULE_DIR$/references/target" />
       <excludeFolder url="file://$MODULE_DIR$/slice_type/target" />
