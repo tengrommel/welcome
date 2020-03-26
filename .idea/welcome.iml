@@ -46,8 +46,13 @@
       <sourceFolder url="file://$MODULE_DIR$/vec/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/vec/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/vec/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/error/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/error/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/error/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/error/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/control_flow/target" />
       <excludeFolder url="file://$MODULE_DIR$/enum_pattern_matching/target" />
+      <excludeFolder url="file://$MODULE_DIR$/error/target" />
       <excludeFolder url="file://$MODULE_DIR$/main/target" />
       <excludeFolder url="file://$MODULE_DIR$/my_functions/target" />
       <excludeFolder url="file://$MODULE_DIR$/ostructs/target" />
