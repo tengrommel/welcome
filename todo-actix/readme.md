@@ -15,3 +15,7 @@
 # 创建数据库表和插入数据
 
     psql -h 127.0.0.1 -p 15432 -U actix < database.sql
+    
+# ab测试
+    
+    ab -p todo.json -T application/json -n 100000 -k -c 30 -q http://localhost:1313/todos
