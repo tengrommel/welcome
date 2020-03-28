@@ -7,7 +7,7 @@ use std::io;
 use actix_web::{HttpServer, web, App};
 use dotenv::dotenv;
 use tokio_postgres::NoTls;
-use crate::handlers::{status, get_todos};
+use crate::handlers::{status, get_todos, get_items};
 
 #[actix_rt::main]
 async fn main() -> io::Result<()>{
@@ -20,6 +20,7 @@ async fn main() -> io::Result<()>{
             .data(pool.clone())
             .route("/", web::get().to(status))
             .route("/todos{_:/?}", web::get().to(get_todos))
+            .route("/todos/{list_id}/items", web::get().to(get_items))
     })
         .bind(format!("{}:{}", configs.server.host, configs.server.port))?
         .run()
