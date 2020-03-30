@@ -66,6 +66,10 @@
       <sourceFolder url="file://$MODULE_DIR$/trust/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/trust/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/trust/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web_stream/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web_stream/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web_stream/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web_stream/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/control_flow/target" />
       <excludeFolder url="file://$MODULE_DIR$/enum_pattern_matching/target" />
       <excludeFolder url="file://$MODULE_DIR$/error/target" />
@@ -82,6 +86,7 @@
       <excludeFolder url="file://$MODULE_DIR$/trust/target" />
       <excludeFolder url="file://$MODULE_DIR$/two_sum/target" />
       <excludeFolder url="file://$MODULE_DIR$/vec/target" />
+      <excludeFolder url="file://$MODULE_DIR$/web_stream/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
