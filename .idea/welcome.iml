@@ -98,6 +98,10 @@
       <sourceFolder url="file://$MODULE_DIR$/demo_hashmap/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/demo_hashmap/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/demo_hashmap/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/mylib/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mylib/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mylib/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/mylib/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/control_flow/target" />
       <excludeFolder url="file://$MODULE_DIR$/demo_hashmap/target" />
       <excludeFolder url="file://$MODULE_DIR$/demo_struct/target" />
@@ -109,6 +113,7 @@
       <excludeFolder url="file://$MODULE_DIR$/main/target" />
       <excludeFolder url="file://$MODULE_DIR$/method/target" />
       <excludeFolder url="file://$MODULE_DIR$/my_functions/target" />
+      <excludeFolder url="file://$MODULE_DIR$/mylib/target" />
       <excludeFolder url="file://$MODULE_DIR$/option_demo/target" />
       <excludeFolder url="file://$MODULE_DIR$/ostructs/target" />
       <excludeFolder url="file://$MODULE_DIR$/ownership/target" />
