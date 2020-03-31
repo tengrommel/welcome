@@ -3,24 +3,23 @@ use std::io;
 use std::io::Read;
 
 fn main() {
-    // let v = vec![1,2,3];
-    // v[99];
-    // panic!("crash!!!")
-    let f = match File::open("hello.txt") {
-        Ok(file)=>file,
-        Err(e) => panic!("{:?}", e),
-    };
-    let f = File::open("hello.txt").expect("off");
+    println!("Hello, world!");
+    let r = read_username_from_file();
+    match r {
+        Ok(s) => println!("s = {}", s),
+        Err(e) => println!("err = {:?}", e)
+    }
 }
 
-fn read_username() -> Result<String, io::Error> {
-    let mut f = match File::open("username.txt") {
+fn read_username_from_file() -> Result<String, io::Error> {
+    let f = File::open("hello.txt");
+    let mut f = match f {
         Ok(file) => file,
-        Err(e) => return Err(e)
+        Err(error) =>  return Err(error),
     };
     let mut s = String::new();
     match f.read_to_string(&mut s) {
         Ok(_) => Ok(s),
-        Err(e) => Err(e),
+        Err(error) => Err(error),
     }
 }
