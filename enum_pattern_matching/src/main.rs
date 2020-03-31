@@ -1,55 +1,55 @@
+enum IpAddKind {
+    V4,
+    V6,
+}
+
+struct IpAddr {
+    kind: IpAddKind,
+    address: String,
+}
+
+enum IpAddr2 {
+    V4(String),
+    V6(String),
+}
+
+enum IpAddr3 {
+    V4(u8, u8, u8, u8),
+    V6(String),
+}
+
+enum Message {
+    Quit,
+    Move { x: i32, y: i32 },
+    Write(String),
+    Change(i32, i32, i32),
+}
+
+impl Message {
+    fn prin(&self) {
+        match *self {
+            Message::Quit => println!("Quit"),
+            Message::Move{x, y}  => println!("Move x={}, y={}", x, y),
+            Message::Change(a, b, c) => println!("Change a = {}, b = {}, c = {}", a, b, c),
+            _ => println!("Write!")
+            // Message::Write(&s) => println!("Write = {}", s)
+        }
+    }
+}
+
 fn main() {
-    // Create enums
-    #[derive(Debug)]
-    enum Coin{
-        Penny,
-        Nickel,
-        Dime,
-        Quarter,
-    }
-    // Accessing enums
-    let c: Coin = Coin::Penny;
-    // Enums with data
-    #[derive(Debug)]
-    enum Coin_Data{
-        Penny,
-        Nickel,
-        Dime {x: i32, y: i32},
-        Quarter(String)
-    }
-
-    // impl in enums
-    impl Coin_Data{
-        fn call(&self) {
-            println!("{:?}", self);
-        }
-    }
-    let c_d: Coin_Data = Coin_Data::Penny;
-    c_d.call();
-    // Rust doesn't have null
-    // enum Option<T> {
-    //     Some(T),
-    //     None,
-    // }
-    let o: Option<i32> = Some(5);
-    let o1: Option<String> = Some(String::from("hello"));
-
-    match c {
-        Coin::Penny => println!("{:?}", c),
-        Coin::Nickel => println!("{:?}", c),
-        Coin::Dime => println!("{:?}", c),
-        Coin::Quarter => println!("{:?}", c)
-    }
-    // value binding in match
-    fn value_in_cents(coin: Coin_Data) -> u8 {
-        match coin {
-            Coin_Data::Penny => 1,
-            Coin_Data::Nickel => 2,
-            Coin_Data::Dime => 3,
-            Coin_Data::Quarter(some_string) => {
-                println!("{:?}", some_string);
-                23
-            }
-        }
-    }
+    let i1 = IpAddr {
+        kind: IpAddKind::V4,
+        address: String::from("127.0.0.1"),
+    };
+    let i2 = IpAddr {
+        kind: IpAddKind::V6,
+        address: String::from("::1"),
+    };
+    let j1 = IpAddr2::V4(String::from("127.0.0.1"));
+    let j2 = IpAddr2::V4(String::from("::1"));
+    let l1 = IpAddr3::V4(1, 2, 3, 4);
+    let l2 = IpAddr3::V6(String::from("ff"));
+    let quit = Message::Quit;
+    quit.prin();
 }

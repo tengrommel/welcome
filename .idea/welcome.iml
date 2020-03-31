@@ -78,12 +78,22 @@
       <sourceFolder url="file://$MODULE_DIR$/learn_ref/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/learn_ref/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/learn_ref/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/demo_struct/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/demo_struct/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/demo_struct/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/demo_struct/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/method/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/method/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/method/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/method/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/control_flow/target" />
+      <excludeFolder url="file://$MODULE_DIR$/demo_struct/target" />
       <excludeFolder url="file://$MODULE_DIR$/enum_pattern_matching/target" />
       <excludeFolder url="file://$MODULE_DIR$/error/target" />
       <excludeFolder url="file://$MODULE_DIR$/learn_ref/target" />
       <excludeFolder url="file://$MODULE_DIR$/lifetime/target" />
       <excludeFolder url="file://$MODULE_DIR$/main/target" />
+      <excludeFolder url="file://$MODULE_DIR$/method/target" />
       <excludeFolder url="file://$MODULE_DIR$/my_functions/target" />
       <excludeFolder url="file://$MODULE_DIR$/ostructs/target" />
       <excludeFolder url="file://$MODULE_DIR$/ownership/target" />
