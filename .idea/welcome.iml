@@ -74,9 +74,14 @@
       <sourceFolder url="file://$MODULE_DIR$/web_stream/mylib/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/web_stream/mylib/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/web_stream/mylib/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/learn_ref/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/learn_ref/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/learn_ref/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/learn_ref/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/control_flow/target" />
       <excludeFolder url="file://$MODULE_DIR$/enum_pattern_matching/target" />
       <excludeFolder url="file://$MODULE_DIR$/error/target" />
+      <excludeFolder url="file://$MODULE_DIR$/learn_ref/target" />
       <excludeFolder url="file://$MODULE_DIR$/lifetime/target" />
       <excludeFolder url="file://$MODULE_DIR$/main/target" />
       <excludeFolder url="file://$MODULE_DIR$/my_functions/target" />
