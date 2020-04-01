@@ -9,6 +9,11 @@ enum List {
     Nil,
 }
 
+// 实现解引用 Deref trait允许我们重载解引用
+// let a: A = A::new();
+// let b = &a;
+// let c = *b;// 解引用
+
 fn main() {
     let list = List::Cons(1,
                           Box::new(Cons(2,
@@ -16,4 +21,11 @@ fn main() {
                                                       Box::new(Nil))))));
     let b = Box::new(5); // b存储于栈上 5存储在堆上 b指向5所在的内存
     println!("b = {}", b);
+
+    let x = 5;
+    let y = &x;
+    assert_eq!(5, x);
+    assert_eq!(5, *y); // 解引用
+    let z = Box::new(x);
+    assert_eq!(5, *z);
 }
