@@ -1,17 +1,11 @@
 fn main() {
-    // Functions
-    let mut x = 1;
-    println!("before function: {}", x);
-    x = stuff(x);
-    println!("After function: {}", x);
-    // ## Statements
-    // - ';'
-    // - do not return a value.
-    // ## Expressions
-    // - no ';' have a 'return' keyword
-}
-
-fn stuff(x: u8) -> u8 {
-    println!("Inside of function: {}", x);
-    x+1
+    // let x = 4;
+    // let equal_to_x = |z| z == x;
+    // let y = 4;
+    // assert!(equal_to_x(y));
+    let x = vec![1,2,3];
+    let equal_to_x = move |z|z==x;
+    println!("x = {:?}", x);
+    let y = vec![1, 2, 3];
+    assert!(equal_to_x(y));
 }
