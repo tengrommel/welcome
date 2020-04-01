@@ -122,12 +122,17 @@
       <sourceFolder url="file://$MODULE_DIR$/box_demo/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/box_demo/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/box_demo/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/deref/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/deref/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/deref/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/deref/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/box_demo/target" />
       <excludeFolder url="file://$MODULE_DIR$/control_flow/target" />
       <excludeFolder url="file://$MODULE_DIR$/counter/target" />
       <excludeFolder url="file://$MODULE_DIR$/demo_hashmap/target" />
       <excludeFolder url="file://$MODULE_DIR$/demo_struct/target" />
       <excludeFolder url="file://$MODULE_DIR$/demo_vector/target" />
+      <excludeFolder url="file://$MODULE_DIR$/deref/target" />
       <excludeFolder url="file://$MODULE_DIR$/enum_pattern_matching/target" />
       <excludeFolder url="file://$MODULE_DIR$/error/target" />
       <excludeFolder url="file://$MODULE_DIR$/iter/target" />
