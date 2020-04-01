@@ -106,6 +106,10 @@
       <sourceFolder url="file://$MODULE_DIR$/method_lifetime/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/method_lifetime/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/method_lifetime/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/use_closure/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/use_closure/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/use_closure/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/use_closure/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/control_flow/target" />
       <excludeFolder url="file://$MODULE_DIR$/demo_hashmap/target" />
       <excludeFolder url="file://$MODULE_DIR$/demo_struct/target" />
@@ -129,6 +133,7 @@
       <excludeFolder url="file://$MODULE_DIR$/todo-actix/target" />
       <excludeFolder url="file://$MODULE_DIR$/trust/target" />
       <excludeFolder url="file://$MODULE_DIR$/two_sum/target" />
+      <excludeFolder url="file://$MODULE_DIR$/use_closure/target" />
       <excludeFolder url="file://$MODULE_DIR$/vec/target" />
       <excludeFolder url="file://$MODULE_DIR$/web_stream/mylib/target" />
       <excludeFolder url="file://$MODULE_DIR$/web_stream/target" />
