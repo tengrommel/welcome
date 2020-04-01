@@ -1,26 +1,32 @@
+// 实现一个缓存，只处理第一次传入的值并保存
+struct Cacher<T>
+    where T: Fn(u32) -> u32 {
+    calcuation: T,
+    value: Option<u32>
+}
+
+impl <T> Cacher<T>
+    where T:Fn(u32) -> u32 {
+    fn new(calcuation: T) -> Cacher<T> {
+        Cacher {
+            calcuation,
+            value:None,
+        }
+    }
+    fn value(&mut self, arg: u32) -> u32 {
+        match self.value {
+            Some(v) => v,
+            None => {
+                let v = (self.calcuation)(arg);
+                self.value = Some(v);
+                v
+            }
+        }
+    }
+}
+
 fn main() {
-    let a = 34;
-    let mut e: u8 = 0;
-    let mut i = 0;
-    let mut int:u8 = 255;
-    let mut int: u8= 255;
-    let mut float: f32 = 2.0;
-    let mut b: bool = false;
-    let mut c='够';
-
-    println!("{}, {}, {}", a, b, c);
-
-    // # Compound Types
-    // ## Tuples
-    let mut tup = (1, 2, 'c');
-    println!("{:?}", tup);
-    tup.2 = '都';
-    // ## Arrays
-    let mut arr = [1,2, 3];
-    let mut arr1: [u8;3] = [1,2,3];
-    println!("{:?}", arr1);
-    arr1[0] = 20;
-    println!("{:?}", arr1);
-    // # Curiosities
-    // ## Two's complement
+    let mut c = Cacher::new(|x|x+1);
+    let v1 = c.value(1);
+    println!("v1 = {}", v1);
 }
