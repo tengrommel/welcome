@@ -12,7 +12,12 @@ use List::{Cons, Nil};
 
 fn main() {
     let a = Rc::new(Cons(5, Rc::new(Cons(10, Rc::new(Nil)))));
-    // let b = Cons(3, Rc::clone(&a));
-    let b = Cons(3, a.clone());
-    let c = Cons(4, Rc::clone(&a));
+    println!("count after creating a = {}", Rc::strong_count(&a));
+    let b = Cons(3, Rc::clone(&a));
+    println!("count after bind to b, a count = {}", Rc::strong_count(&a));
+    {
+        let c = Cons(4, Rc::clone(&a));
+        println!("count after bind to c, a count = {}", Rc::strong_count(&a));
+    }
+    println!("count at end, a = {}", Rc::strong_count(&a));
 }
