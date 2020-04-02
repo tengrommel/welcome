@@ -138,6 +138,14 @@
       <sourceFolder url="file://$MODULE_DIR$/refcell/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/refcell/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/refcell/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/loop_ref/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/loop_ref/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/loop_ref/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/loop_ref/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/weekref/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/weekref/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/weekref/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/weekref/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/box_demo/target" />
       <excludeFolder url="file://$MODULE_DIR$/control_flow/target" />
       <excludeFolder url="file://$MODULE_DIR$/counter/target" />
@@ -151,6 +159,7 @@
       <excludeFolder url="file://$MODULE_DIR$/iter/target" />
       <excludeFolder url="file://$MODULE_DIR$/learn_ref/target" />
       <excludeFolder url="file://$MODULE_DIR$/lifetime/target" />
+      <excludeFolder url="file://$MODULE_DIR$/loop_ref/target" />
       <excludeFolder url="file://$MODULE_DIR$/main/target" />
       <excludeFolder url="file://$MODULE_DIR$/method/target" />
       <excludeFolder url="file://$MODULE_DIR$/method_lifetime/target" />
@@ -172,6 +181,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vec/target" />
       <excludeFolder url="file://$MODULE_DIR$/web_stream/mylib/target" />
       <excludeFolder url="file://$MODULE_DIR$/web_stream/target" />
+      <excludeFolder url="file://$MODULE_DIR$/weekref/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
