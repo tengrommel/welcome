@@ -146,7 +146,16 @@
       <sourceFolder url="file://$MODULE_DIR$/weekref/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/weekref/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/weekref/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/browser/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/browser/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/browser/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/browser/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/rust_3d/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rust_3d/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rust_3d/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/rust_3d/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/box_demo/target" />
+      <excludeFolder url="file://$MODULE_DIR$/browser/target" />
       <excludeFolder url="file://$MODULE_DIR$/control_flow/target" />
       <excludeFolder url="file://$MODULE_DIR$/counter/target" />
       <excludeFolder url="file://$MODULE_DIR$/demo_hashmap/target" />
@@ -172,6 +181,7 @@
       <excludeFolder url="file://$MODULE_DIR$/refcell/target" />
       <excludeFolder url="file://$MODULE_DIR$/references/target" />
       <excludeFolder url="file://$MODULE_DIR$/restaurant/target" />
+      <excludeFolder url="file://$MODULE_DIR$/rust_3d/target" />
       <excludeFolder url="file://$MODULE_DIR$/slice_type/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/todo-actix/target" />

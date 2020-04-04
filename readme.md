@@ -42,3 +42,25 @@
 - EPOLL_CTL_DEL
 
 # Implement TCP
+
+# System Comparisons
+
+- SVG 
+    - Simple to learn
+    - Poor performance
+    - Thumbs down on 
+
+- WebGL
+    - Much more efficient than SVG
+    - Very cross-platform(97%)
+    - Steep learning curve
+
+- WebGL2
+    - More efficient than WebGL
+    - Steep learning curve
+    - Poor browser support (no IOS)
+
+- WebGPU
+    - Extremely efficient
+    - Extremely steep learning curve
+    - Extremely poor browser support
