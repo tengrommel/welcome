@@ -64,3 +64,9 @@
     - Extremely efficient
     - Extremely steep learning curve
     - Extremely poor browser support
+
+# Storing Efficiently
+- Trade-offs considering speed and readability
+- Accessing heap and stack variables
+- How immutability influences design
+
