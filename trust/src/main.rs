@@ -12,7 +12,7 @@ struct Quad {
 
 fn main() -> io::Result<()> {
     let mut connections: HashMap<Quad, tcp::State> = Default::default();
-    let nic = tun_tap::Iface::new("tun0", tun_tap::Mode::Tun)?;
+    let mut nic = tun_tap::Iface::new("tun0", tun_tap::Mode::Tun)?;
     let mut buf = [0u8; 1504];
     loop {
         let n_bytes = nic.recv(&mut buf[..])?;
@@ -35,7 +35,7 @@ fn main() -> io::Result<()> {
                         connections.entry(Quad {
                             src: (src, tcph.source_port()),
                             dst: (dst, tcph.destination_port()),
-                        }).or_default().on_packet(iph, tcph, &buf[datai..n_bytes]);
+                        }).or_default().on_packet(&mut nic,iph, tcph, &buf[datai..n_bytes])?;
                     }
                     Err(e) => {
                         eprintln!("ignoring weired tcp packet {:?}", e);
