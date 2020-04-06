@@ -1,4 +1,5 @@
 use rand::prelude::*;
+use std::collections::HashMap;
 
 fn main() {
     // create a rand number that represents length of the list of nums
@@ -12,7 +13,25 @@ fn main() {
     println!("nums: {:?}", nums);
     compute_mean(&mut nums);
     compute_median(&mut nums);
-    // println!("num: {:?}", num);
+    compute_mode(&nums);
+}
+
+fn compute_mode(n: &Vec<usize>) {
+    let mut freq = HashMap::new();
+    for i in n {
+        let cnt = freq.entry(i).or_insert(0);
+        *cnt += 1;
+    }
+    let mut max_k = 0;
+    let mut max_v = 0;
+    for (k, v) in &freq {
+        println!("{} ----> {}", **k, *v);
+        if (*v > max_v) {
+            max_v = *v;
+            max_k = **k;
+        }
+    }
+    println!("max: {} -> {}", max_k, max_v);
 }
 
 fn compute_mean(n: &Vec<usize>) {
