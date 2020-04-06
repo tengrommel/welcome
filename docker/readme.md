@@ -22,7 +22,6 @@
 - Build from Dockerfile
 - Pull from Registry
 
-
 # 容器带来的麻烦
  
 - 怎么去管理这么多容器？
