@@ -9,6 +9,7 @@ pub struct BlockHeader {
     pub pre_hash: String
 }
 // 区块
+#[derive(Debug)]
 pub struct Block {
     pub header: BlockHeader,
     pub hash: String,

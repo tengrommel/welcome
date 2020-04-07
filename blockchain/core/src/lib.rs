@@ -1,4 +1,5 @@
-mod block;
+pub mod block;
+pub mod block_chain;
 
 #[cfg(test)]
 mod tests {
