@@ -1,15 +1,22 @@
-use std::fmt::Debug;
+use std::rc::Rc;
+use List::{Cons, Nil};
 
-fn match_option<T: Debug>(o: Option<T>) {
-    match o {
-        Some(i) => println!("{:?}", i),
-        None => println!("nothing")
-    }
+// enum List {
+//     Cons(i32, Box<List>),
+//     Nil
+// }
+// use List::{Cons, Nil};
+enum List {
+    Cons(i32, Rc<List>),
+    Nil
 }
 
 fn main() {
-    let a = Some(3);
-    let b = Some("hello");
-    match_option(b);
-    match_option(a);
+    // let a = Cons(5, Box::new(Cons(10, Box::new(Nil))));
+    // let b = Cons(3, Box::new(a));
+    // let c = Cons(4, Box::new(a));// move发生后还在使用
+    let a = Rc::new(Cons(5, Rc::new(Cons(10, Rc::new(Nil)))));
+    let b = Cons(3, Rc::clone(&a));
+    let c = Cons(4, Rc::clone(&a));
+    eprintln!("over")
 }
