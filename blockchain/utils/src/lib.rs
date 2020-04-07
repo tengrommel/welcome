@@ -1,4 +1,5 @@
 pub mod coder;
+
 #[cfg(test)]
 mod tests {
     #[test]

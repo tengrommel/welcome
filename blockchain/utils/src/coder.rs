@@ -1,5 +1,7 @@
 use bincode;
 use serde::{Deserialize, Serialize};
+use crypto::sha3::Sha3;
+use crypto::digest::Digest;
 
 // 编译时类型不确定
 pub fn my_serialize<T: ?Sized>(value: &T) -> Vec<u8>
@@ -13,6 +15,12 @@ pub fn my_deserialize<'a, T>(bytes: &'a[u8]) -> T
 {
     let deserialized = bincode::deserialize(bytes).unwrap();
     deserialized
+}
+
+pub fn get_hash(value: &[u8]) -> String {
+    let mut hasher = Sha3::sha3_256();
+    hasher.input(value);
+    hasher.result_str()
 }
 
 // 测试
