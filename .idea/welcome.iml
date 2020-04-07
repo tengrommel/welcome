@@ -174,6 +174,26 @@
       <sourceFolder url="file://$MODULE_DIR$/docker/ex/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/docker/ex/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/docker/ex/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/blockchain/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/blockchain/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/blockchain/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/blockchain/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/blockchain/main/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/blockchain/main/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/blockchain/main/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/blockchain/main/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/blockchain/utils/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/blockchain/utils/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/blockchain/utils/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/blockchain/utils/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/blockchain/core/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/blockchain/core/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/blockchain/core/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/blockchain/core/benches" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
+      <excludeFolder url="file://$MODULE_DIR$/blockchain/main/target" />
+      <excludeFolder url="file://$MODULE_DIR$/blockchain/target" />
+      <excludeFolder url="file://$MODULE_DIR$/blockchain/utils/target" />
       <excludeFolder url="file://$MODULE_DIR$/box_demo/target" />
       <excludeFolder url="file://$MODULE_DIR$/browser/target" />
       <excludeFolder url="file://$MODULE_DIR$/control_flow/target" />
