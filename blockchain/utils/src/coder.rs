@@ -16,7 +16,7 @@ pub fn my_deserialize<'a, T>(bytes: &'a[u8]) -> T
 }
 
 // 测试
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, PartialEq, Eq, Debug)]
 struct Point {
     x: i32,
     y: i32,
@@ -32,6 +32,6 @@ mod tests {
         let point = Point{x:1, y:1};
         let se = my_serialize(&point);
         let de: Point = my_deserialize(&se);
-        assert_eq!(de.y, point.y);
+        assert_eq!(de, point);
     }
 }
