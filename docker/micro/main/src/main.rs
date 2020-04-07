@@ -14,7 +14,9 @@ enum List {
 fn main() {
     let value = Rc::new(RefCell::new(5));
     let a = Rc::new(Cons(Rc::clone(&value), Rc::new(Nil)));
+    println!("a after: {:?}", a);
     let b = Cons(Rc::new(RefCell::new(6)), Rc::clone(&a));
+    println!("a after: {:?}", b);
     let c = Cons(Rc::new(RefCell::new(7)), Rc::clone(&a));
     *value.borrow_mut() += 10;
     println!("a after: {:?}", a);

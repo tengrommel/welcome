@@ -198,6 +198,10 @@
       <sourceFolder url="file://$MODULE_DIR$/docker/micro/main/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/docker/micro/main/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/docker/micro/main/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/micro/weak/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/micro/weak/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/micro/weak/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/micro/weak/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/main/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/target" />
@@ -214,6 +218,7 @@
       <excludeFolder url="file://$MODULE_DIR$/docker/ex/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/micro/main/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/micro/target" />
+      <excludeFolder url="file://$MODULE_DIR$/docker/micro/weak/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/rand/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/rand_ex/target" />
       <excludeFolder url="file://$MODULE_DIR$/drop/target" />
