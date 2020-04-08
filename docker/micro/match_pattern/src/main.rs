@@ -31,6 +31,17 @@ fn main() {
     let p = (3, 5);
     print_point(&p);
     println!("{}", HELLO_WORLD);
+    let mut num = 5;
+    // 创建不可变和可变的裸指针可以在安全代码中，只是不能在不安全代码块
+    let r1 = &num as *const i32;
+    let r2 = &mut num as *mut i32;
+    unsafe {
+        println!("r1 os: {}", *r1);
+        println!("r2 os: {}", *r2);
+    }
+    let add = 0x12345usize;
+    let _r = add as *const i32;
+
 }
 
 fn print_point(&(x, y): &(i32, i32)) {
