@@ -234,6 +234,18 @@
       <sourceFolder url="file://$MODULE_DIR$/wasm-markdown/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/wasm-markdown/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/wasm-markdown/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice/main/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice/main/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice/main/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice/main/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice/hyper-microservice/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice/hyper-microservice/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice/hyper-microservice/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/microservice/hyper-microservice/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/main/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/target" />
@@ -270,6 +282,9 @@
       <excludeFolder url="file://$MODULE_DIR$/main/target" />
       <excludeFolder url="file://$MODULE_DIR$/method/target" />
       <excludeFolder url="file://$MODULE_DIR$/method_lifetime/target" />
+      <excludeFolder url="file://$MODULE_DIR$/microservice/hyper-microservice/target" />
+      <excludeFolder url="file://$MODULE_DIR$/microservice/main/target" />
+      <excludeFolder url="file://$MODULE_DIR$/microservice/target" />
       <excludeFolder url="file://$MODULE_DIR$/my_functions/target" />
       <excludeFolder url="file://$MODULE_DIR$/mylib/target" />
       <excludeFolder url="file://$MODULE_DIR$/option_demo/target" />
