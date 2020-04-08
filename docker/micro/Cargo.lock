@@ -13,6 +13,10 @@ name = "mutex"
 version = "0.1.0"
 
 [[package]]
+name = "trait_ex"
+version = "0.1.0"
+
+[[package]]
 name = "weak"
 version = "0.1.0"
 
