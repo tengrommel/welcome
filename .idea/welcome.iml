@@ -226,6 +226,10 @@
       <sourceFolder url="file://$MODULE_DIR$/docker/micro/closure/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/docker/micro/closure/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/docker/micro/closure/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/micro/macros/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/micro/macros/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/micro/macros/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/micro/macros/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/main/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/target" />
@@ -243,6 +247,7 @@
       <excludeFolder url="file://$MODULE_DIR$/docker/foo/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/micro/closure/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/micro/foo/target" />
+      <excludeFolder url="file://$MODULE_DIR$/docker/micro/macros/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/micro/main/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/micro/match_pattern/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/micro/mutex/target" />
