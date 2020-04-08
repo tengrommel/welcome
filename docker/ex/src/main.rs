@@ -1,5 +1,7 @@
 use std::rc::Rc;
 use List::{Cons, Nil};
+use std::fmt;
+use std::fmt::{Formatter, Error};
 
 // enum List {
 //     Cons(i32, Box<List>),
@@ -9,6 +11,26 @@ use List::{Cons, Nil};
 enum List {
     Cons(i32, Rc<List>),
     Nil
+}
+
+trait OutPrint: fmt::Display {
+    fn out_print(&self) {
+        let output = self.to_string();
+        println!("output: {}", output);
+    }
+}
+
+struct Point {
+    x: i32,
+    y: i32,
+}
+
+impl OutPrint for Point {}
+
+impl fmt::Display for Point {
+    fn fmt(&self, f: &mut Formatter<'_>) -> fmt::Result {
+        write!(f, "({}, {})", self.x, self.y)
+    }
 }
 
 fn main() {

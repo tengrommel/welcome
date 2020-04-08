@@ -23,6 +23,11 @@ struct A {
     value: i32
 }
 
+struct Bd {
+    a: A,
+    b: i32
+}
+
 impl my_iterator<i32> for A {
     fn next(&mut self) -> Option<i32> {
         println!("in i32");
