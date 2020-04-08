@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/docker/micro/c/foo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/wasm-markdown" vcs="Git" />
   </component>
 </project>

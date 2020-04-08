@@ -230,6 +230,10 @@
       <sourceFolder url="file://$MODULE_DIR$/docker/micro/macros/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/docker/micro/macros/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/docker/micro/macros/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/wasm-markdown/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/wasm-markdown/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/wasm-markdown/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/wasm-markdown/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/main/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/target" />
@@ -283,6 +287,7 @@
       <excludeFolder url="file://$MODULE_DIR$/two_sum/target" />
       <excludeFolder url="file://$MODULE_DIR$/use_closure/target" />
       <excludeFolder url="file://$MODULE_DIR$/vec/target" />
+      <excludeFolder url="file://$MODULE_DIR$/wasm-markdown/target" />
       <excludeFolder url="file://$MODULE_DIR$/wasmhello/target" />
       <excludeFolder url="file://$MODULE_DIR$/web_stream/mylib/target" />
       <excludeFolder url="file://$MODULE_DIR$/web_stream/target" />
