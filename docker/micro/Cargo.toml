@@ -5,4 +5,5 @@ members = [
     "mutex",
     "match_pattern",
     "trait_ex",
+    "closure"
 ]
