@@ -11,6 +11,10 @@ macro_rules! my_vec { // 模仿vec!
     }
 }
 
+pub trait HelloMacro {
+    fn hello_macro();
+}
+
 fn main() {
     let v = my_vec![1,2,3];
     println!("v= {:?}", v);
