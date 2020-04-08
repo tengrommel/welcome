@@ -14,9 +14,34 @@ static HELLO_WORLD: &str = "Hello world";
 （2）调用不安全的函数或者方法
 （3）访问或修改可变静态变量
 （4）实现不安全的trait
+危险
 */
 
+// 调用c语言的函数
+extern "C" {
+    fn abs(input: i32) -> i32;
+}
+
+unsafe fn dangerous() {
+    println!("do something dangerous");
+}
+
+// 创建不安全的代码抽象
+fn foo() {
+    let mut num = 5;
+    let r1 = &num as *const i32;
+    let r2 = &mut num as *mut i32;
+    unsafe {
+        println!("*r1 = {}", *r1);
+        println!("*r2 = {}", *r1);
+    }
+}
+
 fn main() {
+    unsafe {
+        println!("abs: {}", abs(-3));
+    }
+
     let mut stack = Vec::new();
     stack.push(1);
     stack.push(2);
@@ -41,7 +66,10 @@ fn main() {
     }
     let add = 0x12345usize;
     let _r = add as *const i32;
-
+    unsafe {
+        dangerous();
+    }
+    foo();
 }
 
 fn print_point(&(x, y): &(i32, i32)) {

@@ -3,5 +3,5 @@ members = [
     "main",
     "weak",
     "mutex",
-    "match_pattern"
+    "match_pattern",
 ]

@@ -210,6 +210,14 @@
       <sourceFolder url="file://$MODULE_DIR$/docker/micro/match_pattern/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/docker/micro/match_pattern/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/docker/micro/match_pattern/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/micro/foo/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/micro/foo/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/micro/foo/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/micro/foo/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/foo/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/foo/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/foo/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/foo/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/main/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/target" />
@@ -224,6 +232,8 @@
       <excludeFolder url="file://$MODULE_DIR$/deref/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/bubble_sort/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/ex/target" />
+      <excludeFolder url="file://$MODULE_DIR$/docker/foo/target" />
+      <excludeFolder url="file://$MODULE_DIR$/docker/micro/foo/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/micro/main/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/micro/match_pattern/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/micro/mutex/target" />
