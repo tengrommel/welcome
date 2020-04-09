@@ -31,6 +31,9 @@ impl AppError {
             _ => "An unexpected error has occurred".to_string()
         }
     }
+    pub fn db_error(error: impl ToString) -> AppError {
+        AppError{message: None, cause: Some(error.to_string()), error_type: AppErrorType::DbError}
+    }
 }
 
 impl ResponseError for AppError {
