@@ -246,6 +246,15 @@
       <sourceFolder url="file://$MODULE_DIR$/microservice/hyper-microservice/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/microservice/hyper-microservice/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/microservice/hyper-microservice/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/sound/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sound/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sound/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/sound/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/async/tokio_runtime/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/async/tokio_runtime/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/async/tokio_runtime/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/async/tokio_runtime/benches" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/async/tokio_runtime/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/main/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/target" />
@@ -296,6 +305,7 @@
       <excludeFolder url="file://$MODULE_DIR$/restaurant/target" />
       <excludeFolder url="file://$MODULE_DIR$/rust_3d/target" />
       <excludeFolder url="file://$MODULE_DIR$/slice_type/target" />
+      <excludeFolder url="file://$MODULE_DIR$/sound/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/todo-actix/target" />
       <excludeFolder url="file://$MODULE_DIR$/trust/target" />
