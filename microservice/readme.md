@@ -104,3 +104,37 @@ We now have everything we need and can start the server with the specific runtim
 
     cargo install cargo-watch
     cargo watch -x "run"
+
+## Handling incoming request
+> We've created a server, but it isn't very useful until it can respond on real requests.
+
+we'll add handlers to the requests and use the principles of REST.
+
+## Adding a service function
+> As we saw previously, the Future trait has two associated types: 
+one for a successful result and one for an error.
+
+The service_fn function expects the result to be converted into future with the IntoFuture trait.
+
+    let server = builder.serve(|| service_fn(microservice_handler));
+
+Then add this unimplemented service function:
+
+    fn microservice_handler(req: Request<Body>)
+        -> impl Future<Item=Response<Body>, Error=Error>
+    {
+        unimplemented!();
+    }
+
+Similar to the previous one, this function expects a Request, 
+but it doesn't return a simple Response instance. Instead, it returns a future result. 
+
+Since Future is a trait(which doesn't have a size), we can't return an unsized entity from the 
+function and we have to wrap it in a Box. However, in this case, we used a brand new approach, which 
+
+## Implementing a service function
+
+Out service function will support two kinds of requests:
+
+- GET requests to the / path with an index page response
+- Other requests with a NOT_FOUND response
