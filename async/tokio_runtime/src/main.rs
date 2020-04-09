@@ -8,7 +8,9 @@ async fn main() -> Result<(), Box<dyn Error>>{
     let mut listener = TcpListener::bind(&binding).await?;
     loop {
         let (socket, _) = listener.accept().await?;
-        let _ = handle_client(socket).await;
+        tokio::spawn(async move{
+            let _ = handle_client(socket).await;
+        });
     }
 }
 
