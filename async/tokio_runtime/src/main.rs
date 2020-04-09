@@ -1,6 +1,6 @@
 use tokio::net::{TcpListener, TcpStream};
 use std::error::Error;
-use futures::StreamExt;
+use futures::{SinkExt, StreamExt};
 use tokio_util::codec::{Framed, LinesCodec};
 
 
@@ -17,7 +17,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
     }
 }
 
-async fn handle_client(socket: TcpStream) -> Result<(), Box<dyn Error>> {
+async fn handle_client(socket: TcpStream) -> Result<(), Box<dyn Error + Send + Sync>> {
     let remote_ip = socket.peer_addr()?.ip();
     println!("Received a connection from {}", remote_ip);
     let mut client = Framed::new(socket, LinesCodec::new_with_max_length(1024));
@@ -26,6 +26,21 @@ async fn handle_client(socket: TcpStream) -> Result<(), Box<dyn Error>> {
         Some(Ok(q)) => q,
         _ => return Err("no query received".into()),
     };
-    println!("Received query: {}", query);
+    let (local_port, remote_port) = match parse_query(&query){
+        Ok((l, r)) => (l, r),
+        Err(e) => {
+            let response = format!("{} : Error: INVALID-PORT\n", query);
+            client.send(response).await?;
+            return Err(e);
+        }
+    };
+    println!("Local port: {}", local_port);
+    println!("Remote port: {}", remote_port);
+
     Ok(())
+}
+
+fn parse_query(query: &str) -> Result<(u16, u16), Box<dyn Error + Send + Sync>> {
+    let ports: Vec<&str> = query.split(",").map(|s| s.trim()).collect();
+    Ok((ports[0].parse()?, ports[1].parse()?))
 }
