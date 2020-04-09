@@ -2,9 +2,13 @@ use crate::models::{TodoList, TodoItem};
 use deadpool_postgres::Client;
 use tokio_pg_mapper::FromTokioPostgresRow;
 use std::io;
+use crate::errors::{AppError, AppErrorType};
 
-pub async fn get_todos(client: &Client) -> Result<Vec<TodoList>, io::Error> {
-    let statement = client.prepare("select * from todo_list order by id desc limit 10").await.unwrap();
+pub async fn get_todos(client: &Client) -> Result<Vec<TodoList>, AppError> {
+    let statement = client
+        .prepare("select * from todo_list order by id desc limit 10")
+        .await
+        .map_err(|err|AppError{message: None, cause: Some(err.to_string()), error_type: AppErrorType::DbError})?;
     let todos = client.query(&statement, &[])
         .await
         .expect("Error getting todo lists")

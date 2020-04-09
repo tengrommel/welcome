@@ -2,6 +2,7 @@ mod models;
 mod config;
 mod handlers;
 mod db;
+mod errors;
 
 use std::io;
 use actix_web::{HttpServer, web, App};

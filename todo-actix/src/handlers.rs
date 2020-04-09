@@ -3,6 +3,7 @@ use crate::models::{Status, CreateTodoList, ResultResponse};
 use deadpool_postgres::{Pool, Client};
 use crate::db;
 use std::io::ErrorKind::Other;
+use crate::errors::{AppError, AppErrorType};
 
 pub async fn status() -> impl Responder {
     web::HttpResponse::Ok()
@@ -11,13 +12,14 @@ pub async fn status() -> impl Responder {
         })
 }
 
-pub async fn get_todos(db_pool: web::Data<Pool>) -> impl Responder {
-    let client: Client = db_pool.get().await.expect("Error connecting to the database");
+pub async fn get_todos(db_pool: web::Data<Pool>) -> Result<impl Responder, AppError> {
+    let client: Client =
+        db_pool.get().await
+            .map_err(
+                |err| AppError {message: None, cause: Some(err.to_string()),
+                error_type: AppErrorType::DbError})?;
     let result = db::get_todos(&client).await;
-    match result {
-        Ok(todos) => HttpResponse::Ok().json(todos),
-        Err(_) => HttpResponse::InternalServerError().into()
-    }
+    result.map(|todos|HttpResponse::Ok().json(todos))
 }
 
 pub async fn get_items(db_pool: web::Data<Pool>, path: web::Path<(i32,)>) -> impl Responder {
