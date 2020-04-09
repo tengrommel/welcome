@@ -1,6 +1,9 @@
 use tokio::net::{TcpListener, TcpStream};
-use tokio::io::AsyncReadExt;
 use std::error::Error;
+use futures::StreamExt;
+use tokio_util::codec::{Framed, LinesCodec};
+
+
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {
@@ -14,17 +17,15 @@ async fn main() -> Result<(), Box<dyn Error>> {
     }
 }
 
-async fn handle_client(mut socket: TcpStream) -> Result<(), Box<dyn Error>> {
+async fn handle_client(socket: TcpStream) -> Result<(), Box<dyn Error>> {
     let remote_ip = socket.peer_addr()?.ip();
     println!("Received a connection from {}", remote_ip);
-    loop {
-        let mut buf = [0; 1024];
-        let n = socket.read(&mut buf).await?;
-        if n == 0 {
-            break;
-        }
-        let received = String::from_utf8(buf[0..n].to_vec())?;
-        println!("They sent: {}", received);
-    }
+    let mut client = Framed::new(socket, LinesCodec::new_with_max_length(1024));
+    // let mut client = Framed::new(socket, LinesCodec::new_with_max_length(1024));
+    let query = match client.next().await {
+        Some(Ok(q)) => q,
+        _ => return Err("no query received".into()),
+    };
+    println!("Received query: {}", query);
     Ok(())
 }
