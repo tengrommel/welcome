@@ -3,7 +3,7 @@ use crate::models::{Status, CreateTodoList, ResultResponse, AppState};
 use deadpool_postgres::{Pool, Client};
 use crate::db;
 use crate::errors::AppError;
-use slog::{o, crit, Logger};
+use slog::{o, crit, Logger, error};
 
 pub async fn get_client(pool: Pool, log: Logger) -> Result<Client, AppError> {
     pool.get().await
@@ -26,6 +26,11 @@ pub async fn get_todos(state: web::Data<AppState>) -> Result<impl Responder, App
     let client: Client = get_client(state.pool.clone(), log.clone()).await?;
     let result = db::get_todos(&client).await;
     result.map(|todos|HttpResponse::Ok().json(todos))
+        .map_err(|err|{
+            let sublog = log.new(o!("cause" => err.cause.clone()));
+            error!(sublog, "{}", err.message());
+            err
+        })
 }
 
 pub async fn get_items(state: web::Data<AppState>, path: web::Path<(i32,)>) -> Result<impl Responder, AppError> {

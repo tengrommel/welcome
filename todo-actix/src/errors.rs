@@ -18,7 +18,7 @@ pub struct AppError {
 }
 
 impl AppError {
-    fn message(&self) -> String {
+    pub(crate) fn message(&self) -> String {
         match &*self {
             AppError{
                 message: Some(message),
