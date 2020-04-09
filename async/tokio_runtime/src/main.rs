@@ -1,32 +1,23 @@
-use tokio::net::TcpListener;
-use tokio::prelude::*;
-use futures::stream::StreamExt;
+use tokio::net::{TcpListener, TcpStream};
+use tokio::io::AsyncReadExt;
+use std::error::Error;
 
 #[tokio::main]
-async fn main() {
-    let addr = "127.0.0.1:6142";
-    let mut listener = TcpListener::bind(addr).await.unwrap();
+async fn main() -> Result<(), Box<dyn Error>>{
+    let binding = ":::10113";
+    let mut listener = TcpListener::bind(&binding).await?;
+    loop {
+        let (socket, _) = listener.accept().await?;
+        handle_client(socket).await?;
+    }
+}
 
-    // Here we convert the `TcpListener` to a stream of incoming connections
-    // with the `incoming` method.
-    let server = async move {
-        let mut incoming = listener.incoming();
-        while let Some(socket_res) = incoming.next().await {
-            match socket_res {
-                Ok(socket) => {
-                    println!("Accepted connection from {:?}", socket.peer_addr());
-                    // TODO: Process socket
-                }
-                Err(err) => {
-                    // Handle error by printing to STDOUT.
-                    println!("accept error = {:?}", err);
-                }
-            }
-        }
-    };
-
-    println!("Server running on localhost:6142");
-
-    // Start the server and block this async fn until `server` spins down.
-    server.await;
+async fn handle_client(mut socket: TcpStream) -> Result<(), Box<dyn Error>> {
+    let remote_ip = socket.peer_addr()?.ip();
+    println!("Received a connection from {}", remote_ip);
+    let mut buf = [0; 1024];
+    let n = socket.read(&mut buf).await?;
+    let received = String::from_utf8(buf[0..n].to_vec())?;
+    println!("They sent: {}", received);
+        Ok(())
 }
