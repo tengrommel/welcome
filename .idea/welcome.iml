@@ -254,6 +254,11 @@
       <sourceFolder url="file://$MODULE_DIR$/async/tokio_runtime/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/async/tokio_runtime/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/async/tokio_runtime/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/async/tokio_client/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/async/tokio_client/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/async/tokio_client/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/async/tokio_client/benches" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/async/tokio_client/target" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_runtime/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/main/target" />
