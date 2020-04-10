@@ -65,11 +65,17 @@ pub struct AppErrorResponse {
 mod tests {
     use crate::errors::{AppError, AppErrorType};
 
+    #[test]
     fn test_default_message() {
+        let custom_message = "Unable to create item".to_string();
         let db_error: AppError = AppError {
-            message: None,
+            message: Some(custom_message.clone()),
             cause: None,
             error_type: AppErrorType::DbError
         };
+        assert_eq!(
+            db_error.message(),
+            custom_message,
+        );
     }
 }
