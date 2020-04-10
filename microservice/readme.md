@@ -138,3 +138,13 @@ Out service function will support two kinds of requests:
 
 - GET requests to the / path with an index page response
 - Other requests with a NOT_FOUND response
+
+## Implementing the REST principles
+> If everyone were to create rules of interaction with microservices from scratch, we'd 
+have an excess of private standards of intercommunication.
+
+REST isn't a strict set of rules, but it's an architectural style intended to make interacting
+with microservices simple.
+
+- Adding a shared state
+> You may have already heard that shared data is a bad thing and a potential cause of bottlenecks.
