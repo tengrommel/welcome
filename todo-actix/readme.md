@@ -19,3 +19,10 @@
 # ab测试
     
     ab -p todo.json -T application/json -n 100000 -k -c 30 -q http://localhost:1313/todos
+    
+# 安装diesel
+    sudo apt-get install libpq-dev
+    cargo install diesel_cli --no-default-features --features postgres
+    diesel setup
+    diesel migration run --database-url "postgres://actix:actix@localhost:15432/actix"
+    

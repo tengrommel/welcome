@@ -9,7 +9,7 @@ use actix_web::{HttpServer, web, App};
 use dotenv::dotenv;
 use tokio_postgres::NoTls;
 use crate::handlers::{status, get_todos, get_items, create_todo, check_item};
-use slog::{Logger, Drain, o, info};
+use slog::info;
 use crate::models::AppState;
 use crate::config::Config;
 

@@ -1,6 +1,6 @@
 use config::ConfigError;
 use serde::Deserialize;
-use slog::{Logger, Drain, o, info};
+use slog::{Logger, Drain, o};
 use tokio_postgres::NoTls;
 use deadpool_postgres::Pool;
 
