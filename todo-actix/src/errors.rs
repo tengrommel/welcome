@@ -60,3 +60,16 @@ impl fmt::Display for AppError{
 pub struct AppErrorResponse {
     pub error: String
 }
+
+#[cfg(test)]
+mod tests {
+    use crate::errors::{AppError, AppErrorType};
+
+    fn test_default_message() {
+        let db_error: AppError = AppError {
+            message: None,
+            cause: None,
+            error_type: AppErrorType::DbError
+        };
+    }
+}
