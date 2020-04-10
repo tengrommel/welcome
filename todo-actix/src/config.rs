@@ -1,5 +1,8 @@
 use config::ConfigError;
 use serde::Deserialize;
+use slog::{Logger, Drain, o, info};
+use tokio_postgres::NoTls;
+use deadpool_postgres::Pool;
 
 #[derive(Deserialize)]
 pub struct ServerConfig {
@@ -18,5 +21,14 @@ impl Config {
         let mut cfg = config::Config::new();
         cfg.merge(config::Environment::new())?;
         cfg.try_into()
+    }
+    pub(crate) fn configure_log() -> Logger {
+        let decorator = slog_term::TermDecorator::new().build();
+        let console_drain = slog_term::FullFormat::new(decorator).build().fuse();
+        let console_drain = slog_async::Async::new(console_drain).build().fuse();
+        slog::Logger::root(console_drain, o!("v" => env!("CARGO_PKG_VERSION")))
+    }
+    pub fn configure_pool(&self) -> Pool {
+        self.pg.create_pool(NoTls).unwrap()
     }
 }
