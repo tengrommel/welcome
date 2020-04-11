@@ -147,4 +147,6 @@ REST isn't a strict set of rules, but it's an architectural style intended to ma
 with microservices simple.
 
 - Adding a shared state
-> You may have already heard that shared data is a bad thing and a potential cause of bottlenecks.
+> You may have already heard that shared data is a bad thing and a potential cause of bottlenecks, 
+if it has to be changed from separate threads. However, shared data can be useful if we want to 
+share the address of a channel or if we don't need frequent access to it.
