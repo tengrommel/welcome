@@ -3,6 +3,9 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/docker/micro/c/foo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rust_3d/open-gl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rust_3d/open-gl/www" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rust_3d/opengl" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/wasm-markdown" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/wasm-markdown/www" vcs="Git" />
   </component>

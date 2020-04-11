@@ -258,6 +258,10 @@
       <sourceFolder url="file://$MODULE_DIR$/async/tokio_client/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/async/tokio_client/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/async/tokio_client/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/sound/two_sum/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sound/two_sum/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sound/two_sum/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/sound/two_sum/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_client/target" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_runtime/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
@@ -311,6 +315,7 @@
       <excludeFolder url="file://$MODULE_DIR$/rust_3d/target" />
       <excludeFolder url="file://$MODULE_DIR$/slice_type/target" />
       <excludeFolder url="file://$MODULE_DIR$/sound/target" />
+      <excludeFolder url="file://$MODULE_DIR$/sound/two_sum/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/todo-actix/target" />
       <excludeFolder url="file://$MODULE_DIR$/trust/target" />
