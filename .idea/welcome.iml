@@ -262,6 +262,10 @@
       <sourceFolder url="file://$MODULE_DIR$/sound/two_sum/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sound/two_sum/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/sound/two_sum/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ml/data_structures/hello_rust/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ml/data_structures/hello_rust/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ml/data_structures/hello_rust/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ml/data_structures/hello_rust/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_client/target" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_runtime/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
@@ -303,6 +307,8 @@
       <excludeFolder url="file://$MODULE_DIR$/microservice/hyper-microservice/target" />
       <excludeFolder url="file://$MODULE_DIR$/microservice/main/target" />
       <excludeFolder url="file://$MODULE_DIR$/microservice/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ml/data_structures/hello_rust/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ml/data_structures/target" />
       <excludeFolder url="file://$MODULE_DIR$/my_functions/target" />
       <excludeFolder url="file://$MODULE_DIR$/mylib/target" />
       <excludeFolder url="file://$MODULE_DIR$/option_demo/target" />
