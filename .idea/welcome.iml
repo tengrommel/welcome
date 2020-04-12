@@ -270,6 +270,10 @@
       <sourceFolder url="file://$MODULE_DIR$/ml/data_structures/crawler/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ml/data_structures/crawler/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/ml/data_structures/crawler/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/fit/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fit/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fit/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/fit/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_client/target" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_runtime/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
@@ -301,6 +305,7 @@
       <excludeFolder url="file://$MODULE_DIR$/drop/target" />
       <excludeFolder url="file://$MODULE_DIR$/enum_pattern_matching/target" />
       <excludeFolder url="file://$MODULE_DIR$/error/target" />
+      <excludeFolder url="file://$MODULE_DIR$/fit/target" />
       <excludeFolder url="file://$MODULE_DIR$/iter/target" />
       <excludeFolder url="file://$MODULE_DIR$/learn_ref/target" />
       <excludeFolder url="file://$MODULE_DIR$/lifetime/target" />
