@@ -10,5 +10,8 @@ fn main() {
         Ok(file) => file,
     };
     let mut fits_data:Vec<u8> = Vec::new();
-    file.read_to_end(&mut fits_data);
+    match file.read_to_end(&mut fits_data) {
+        Err(e) => panic!("Couldn't read file {}:{}", data_path.display(), e.description()),
+        Ok(bytes) => println!("Successfully read {} bytes from {}", bytes, data_path.display())
+    };
 }
