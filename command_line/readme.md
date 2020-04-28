@@ -16,4 +16,20 @@ code for easy distribution, so users don't need to have a language runtime on th
 Cowsay is a funny little command-line program originally written in Perl.
 
 It takes a text message and renders an ASCII-art cow(it looks more like a horse to me, to be honest) saying that 
-message in a speech bubble 
+message in a speech bubble. Although this program seems pretty useless, it's still quite popular on UNIX 
+servers, where the system administrator can use it to print a light-hearted welcome message to the user.
+
+Cowsay has a very simple algorithm, so by using it as an example, I can focus on 
+the mechanisms and tooling to build a command-line program, instead of focusing on the business logic.
+
+- Take a string as the positional argument
+- Take a -d/--dead flag that makes the cat's eyes become xx, which is the comical expression of dead eyes
+- Take a -h/--help flag to print a help message
+- Take a -v/--version flag to print the version information
+- Print the image in color
+- Error handling: print any error message to STDERR
+- Piping: accept STDIN as input and allow the output to be piped to other programs
+- Run integration tests
+- Package and publish the tool to crates.io
+
+
