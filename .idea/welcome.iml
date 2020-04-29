@@ -275,6 +275,13 @@
       <sourceFolder url="file://$MODULE_DIR$/fit/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/fit/benches" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/command_line/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sound/syntax/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sound/basic_loops/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sound/match_pattern/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sound/result_option/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sound/trait_point/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sound/lib/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sound/money/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_client/target" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_runtime/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
@@ -332,7 +339,14 @@
       <excludeFolder url="file://$MODULE_DIR$/restaurant/target" />
       <excludeFolder url="file://$MODULE_DIR$/rust_3d/target" />
       <excludeFolder url="file://$MODULE_DIR$/slice_type/target" />
+      <excludeFolder url="file://$MODULE_DIR$/sound/basic_loops/target" />
+      <excludeFolder url="file://$MODULE_DIR$/sound/lib/target" />
+      <excludeFolder url="file://$MODULE_DIR$/sound/match_pattern/target" />
+      <excludeFolder url="file://$MODULE_DIR$/sound/money/target" />
+      <excludeFolder url="file://$MODULE_DIR$/sound/result_option/target" />
+      <excludeFolder url="file://$MODULE_DIR$/sound/syntax/target" />
       <excludeFolder url="file://$MODULE_DIR$/sound/target" />
+      <excludeFolder url="file://$MODULE_DIR$/sound/trait_point/target" />
       <excludeFolder url="file://$MODULE_DIR$/sound/two_sum/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/todo-actix/target" />
