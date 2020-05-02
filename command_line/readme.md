@@ -37,9 +37,6 @@ the mechanisms and tooling to build a command-line program, instead of focusing 
 
 But once you have more and more options, it becomes cumbersome to parse them by hand.
 
-These types of arguments are prevalent in command-line tools, but implementing them from 
-scratch every time is a real pain.
+These types of arguments are prevalent in command-line tools, but implementing them from scratch every time is a real pain.
 
-<b>To make your life even simpler, there is the great library called StructOpt that combines clap 
-and custom derive. Custom derive is a feature in Rust that automatically generates a default implementation 
-of a trait by annotating a struct.</b>
+<b>To make your life even simpler, there is the great library called StructOpt that combines clap and custom derive. Custom derive is a feature in Rust that automatically generates a default implementation of a trait by annotating a struct.</b>
