@@ -283,6 +283,7 @@
       <sourceFolder url="file://$MODULE_DIR$/sound/lib/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sound/money/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ml/genericity/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ml/ownership/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_client/target" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_runtime/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
@@ -330,6 +331,7 @@
       <excludeFolder url="file://$MODULE_DIR$/ml/data_structures/hello_rust/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/data_structures/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/genericity/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ml/ownership/target" />
       <excludeFolder url="file://$MODULE_DIR$/my_functions/target" />
       <excludeFolder url="file://$MODULE_DIR$/mylib/target" />
       <excludeFolder url="file://$MODULE_DIR$/option_demo/target" />
