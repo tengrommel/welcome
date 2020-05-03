@@ -1,17 +1,21 @@
 fn main() {
-    let s1 = give_ownership();
-    println!("{}", s1);
-    let mut s2 = String::from("hello");
-    let mut s3 = takes_and_gives_back(&s2);
-    // s2 = takes_and_gives_back(s3);
-    modify(&mut s2); // cannot borrow `s2` as mutable because it is also borrowed as immutable
-    println!("s2 = {}", s2);
-    println!("s2 = {}", s3);
+    let mut s1 = String::from("hello");
 
-    let mut ss = String::from("ok");
-    modify(&mut ss);
-    println!("ss = {}", ss);
+    let r1 = &s1;
+    let r2 = &s1;
+    // let r3 = &mut s1; mutable borrow occurs here  有借用后不能使用引用
+    println!("{} {}", r1, r2);
+    // let ref_s = dangle();help: consider giving it a 'static lifetime: `&'static`
+    // println!("s = {}", s);
+    // dangle();
+
 }
+
+// 生命周期 对象已消失 悬垂引用
+// fn dangle() -> &'static String {
+//     let s = String::from("hello");
+//     &s
+// }
 
 fn give_ownership() -> String {
     let s = String::from("hello");
