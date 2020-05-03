@@ -12,7 +12,7 @@ impl Message {
             Message::Quit => println!("Quit"),
             Message::Move {x, y} => println!("Move x = {}, y = {}", x, y),
             Message::Change(a, b, c) => println!("Change a = {}, b = {}, c = {}", a, b, c),
-            Message::Write(a) => println!("Write = {}", a), //expected struct `std::string::String`, found reference
+            Message::Write(s) => println!("Write = {}", s), //expected struct `std::string::String`, found reference
             // _ => println!("Quit")
         }
     }
