@@ -288,6 +288,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ml/slice/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ml/enumerate/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ml/option/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ml/error/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_client/target" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_runtime/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
@@ -335,6 +336,7 @@
       <excludeFolder url="file://$MODULE_DIR$/ml/data_structures/hello_rust/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/data_structures/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/enumerate/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ml/error/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/genericity/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/option/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/ownership/target" />

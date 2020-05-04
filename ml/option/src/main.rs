@@ -3,6 +3,8 @@
 //     None
 // }
 
+use std::collections::HashMap;
+
 fn plus_one(x: Option<i32>) -> Option<i32> {
     match x {
         None => None,
@@ -74,7 +76,14 @@ fn main() {
         println!("item :{:?}", i);
     }
     let mut v = vec![1,2,3,4,5];
-    let first = &v[0]; // mutable borrow occurs here 可变引用后使用不可变引用
+    // let first = &v[0]; // mutable borrow occurs here 可变引用后使用不可变引用
     v.push(6);
-    println!("first = {}", first);
+    // println!("first = {}", first);
+    let text = "hello world wonderful world";
+    let mut map = HashMap::new();
+    for word in text.split_whitespace() {
+        let count = map.entry(word).or_insert(0);
+        *count += 1;
+    }
+    println!("map = {:?}", map);
 }
