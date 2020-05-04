@@ -3,10 +3,18 @@ pub trait GetInformation {
     fn get_age(&self) -> u32;
 }
 
+trait SchoolName {
+    fn get_school_name(&self) -> String {
+        String::from("红星小学")
+    }
+}
+
 pub struct Student {
     pub name: String,
     pub age: u32
 }
+
+impl ShoolName for Student {}
 
 impl GetInformation for Student {
     fn get_name(&self) -> &String {

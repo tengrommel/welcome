@@ -290,6 +290,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ml/option/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ml/error/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ml/get_trait/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ml/trait_bound/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_client/target" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_runtime/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
@@ -344,6 +345,7 @@
       <excludeFolder url="file://$MODULE_DIR$/ml/ownership/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/reference/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/slice/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ml/trait_bound/target" />
       <excludeFolder url="file://$MODULE_DIR$/my_functions/target" />
       <excludeFolder url="file://$MODULE_DIR$/mylib/target" />
       <excludeFolder url="file://$MODULE_DIR$/option_demo/target" />
