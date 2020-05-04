@@ -38,8 +38,7 @@ fn read_username_from_file() -> Result<String, io::Error> {
 
 // 问号
 fn read_username_from_file_question() -> Result<String, io::Error> {
-    let mut f = File::open("hello.txt")?;
-    let mut s = String::new();// 读取成字符串
-    f.read_to_string(&mut s)?;
+    let mut s = String::new();
+    File::open("hello.txt")?.read_to_string(&mut s)?;
     Ok(s)
 }
