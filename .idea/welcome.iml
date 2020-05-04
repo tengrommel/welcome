@@ -295,6 +295,8 @@
       <sourceFolder url="file://$MODULE_DIR$/ml/learn_option/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ml/net/tcp/server/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ml/net/tcp/client/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ml/net/udp/server/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ml/net/udp/client/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_client/target" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_runtime/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
@@ -349,6 +351,8 @@
       <excludeFolder url="file://$MODULE_DIR$/ml/lifetime/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/tcp/client/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/tcp/server/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ml/net/udp/client/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ml/net/udp/server/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/option/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/ownership/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/reference/target" />
