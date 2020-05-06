@@ -297,6 +297,8 @@
       <sourceFolder url="file://$MODULE_DIR$/ml/net/tcp/client/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ml/net/udp/server/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ml/net/udp/client/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/game_of_life/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ml/net/ipnet_ex/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_client/target" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_runtime/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
@@ -330,6 +332,7 @@
       <excludeFolder url="file://$MODULE_DIR$/enum_pattern_matching/target" />
       <excludeFolder url="file://$MODULE_DIR$/error/target" />
       <excludeFolder url="file://$MODULE_DIR$/fit/target" />
+      <excludeFolder url="file://$MODULE_DIR$/game_of_life/target" />
       <excludeFolder url="file://$MODULE_DIR$/iter/target" />
       <excludeFolder url="file://$MODULE_DIR$/learn_ref/target" />
       <excludeFolder url="file://$MODULE_DIR$/lifetime/target" />
@@ -349,6 +352,8 @@
       <excludeFolder url="file://$MODULE_DIR$/ml/get_trait/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/learn_option/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/lifetime/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ml/net/ipnet/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ml/net/ipnet_ex/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/tcp/client/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/tcp/server/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/udp/client/target" />
