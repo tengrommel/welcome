@@ -16,5 +16,9 @@ fn main() -> std::io::Result<()> {
     let net: IpNet = IpNet::from_str("10.1.1.0/24").unwrap();
     println!("{} hostmask = {}", net, net.hostmask());
     println!("{} netmask = {}", net, net.netmask());
+    assert_eq!(
+        "192.168.12.34/16".parse::<IpNet>().unwrap().trunc(),
+        "192.168.0.0/16".parse().unwrap()
+    );
     Ok(())
 }
