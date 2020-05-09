@@ -303,6 +303,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ml/net/use_mio/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ml/closure/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ml/net/use_pnet/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ml/net/use_dns/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_client/target" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_runtime/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
@@ -363,6 +364,7 @@
       <excludeFolder url="file://$MODULE_DIR$/ml/net/tcp/server/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/udp/client/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/udp/server/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ml/net/use_dns/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/use_ipnet/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/use_mio/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/use_pnet/target" />
