@@ -307,6 +307,7 @@
       <sourceFolder url="file://$MODULE_DIR$/docker/primitives/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/docker/literals_operators/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/docker/tuples/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/arrays_slices/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_client/target" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_runtime/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
@@ -322,6 +323,7 @@
       <excludeFolder url="file://$MODULE_DIR$/demo_struct/target" />
       <excludeFolder url="file://$MODULE_DIR$/demo_vector/target" />
       <excludeFolder url="file://$MODULE_DIR$/deref/target" />
+      <excludeFolder url="file://$MODULE_DIR$/docker/arrays_slices/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/bubble_sort/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/ex/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/foo/target" />
