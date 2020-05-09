@@ -33,7 +33,6 @@ impl ThreadPool {
     }
 }
 
-
 impl Drop for ThreadPool {
     fn drop(&mut self) {
         for worker in &mut self.workers {
