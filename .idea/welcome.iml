@@ -306,6 +306,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ml/net/use_dns/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/docker/primitives/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/docker/literals_operators/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/tuples/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_client/target" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_runtime/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
@@ -337,6 +338,7 @@
       <excludeFolder url="file://$MODULE_DIR$/docker/primitives/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/rand/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/rand_ex/target" />
+      <excludeFolder url="file://$MODULE_DIR$/docker/tuples/target" />
       <excludeFolder url="file://$MODULE_DIR$/drop/target" />
       <excludeFolder url="file://$MODULE_DIR$/enum_pattern_matching/target" />
       <excludeFolder url="file://$MODULE_DIR$/error/target" />
