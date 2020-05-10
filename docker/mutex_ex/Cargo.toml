@@ -1,5 +1,5 @@
 [package]
-name = "structures"
+name = "mutex_ex"
 version = "0.1.0"
 authors = ["teng <wwwsousoucom@126.com>"]
 edition = "2018"

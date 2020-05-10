@@ -311,6 +311,7 @@
       <sourceFolder url="file://$MODULE_DIR$/docker/structures/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/docker/enums/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/docker/use_ex/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/mutex_ex/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_client/target" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_runtime/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
@@ -341,6 +342,7 @@
       <excludeFolder url="file://$MODULE_DIR$/docker/micro/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/micro/trait_ex/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/micro/weak/target" />
+      <excludeFolder url="file://$MODULE_DIR$/docker/mutex_ex/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/primitives/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/rand/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/rand_ex/target" />
