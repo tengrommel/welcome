@@ -313,6 +313,10 @@
       <sourceFolder url="file://$MODULE_DIR$/docker/use_ex/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/docker/mutex_ex/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/docker/unsafe_ex/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/iter/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/docker/from_ex/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ml/net/use_serde/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ml/net/serde/server/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_client/target" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_runtime/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
@@ -333,6 +337,8 @@
       <excludeFolder url="file://$MODULE_DIR$/docker/enums/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/ex/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/foo/target" />
+      <excludeFolder url="file://$MODULE_DIR$/docker/from_ex/target" />
+      <excludeFolder url="file://$MODULE_DIR$/docker/iter/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/literals_operators/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/micro/closure/target" />
       <excludeFolder url="file://$MODULE_DIR$/docker/micro/foo/target" />
@@ -378,6 +384,7 @@
       <excludeFolder url="file://$MODULE_DIR$/ml/lifetime/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/ipnet/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/ipnet_ex/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ml/net/serde/server/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/tcp/client/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/tcp/server/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/udp/client/target" />
@@ -386,6 +393,7 @@
       <excludeFolder url="file://$MODULE_DIR$/ml/net/use_ipnet/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/use_mio/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/use_pnet/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ml/net/use_serde/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/option/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/ownership/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/reference/target" />
