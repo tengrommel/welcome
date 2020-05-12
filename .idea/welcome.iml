@@ -317,6 +317,7 @@
       <sourceFolder url="file://$MODULE_DIR$/docker/from_ex/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ml/net/use_serde/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ml/net/serde/server/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ml/net/serde/client/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_client/target" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_runtime/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
@@ -384,6 +385,7 @@
       <excludeFolder url="file://$MODULE_DIR$/ml/lifetime/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/ipnet/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/ipnet_ex/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ml/net/serde/client/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/serde/server/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/tcp/client/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/tcp/server/target" />
