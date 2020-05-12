@@ -5,6 +5,7 @@ use std::io::{self, prelude::*, BufRead, Write, BufReader};
 use std::net::{TcpListener, TcpStream};
 use std::{thread, str};
 
+#[derive(Debug, Serialize, Deserialize)]
 struct Point3D {
     x: u32,
     y: u32,
@@ -12,7 +13,7 @@ struct Point3D {
 }
 
 fn handle_client(stream: TcpStream) -> io::Result<()>{
-    println!("Incoming connection from: {}", stream.peer_add()?);
+    println!("Incoming connection from: {}", stream.peer_addr()?);
     let mut data = Vec::new();
     let mut stream = BufReader::new(stream);
     loop {
