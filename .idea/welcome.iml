@@ -318,6 +318,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ml/net/use_serde/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ml/net/serde/server/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ml/net/serde/client/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ml/net/use_build/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_client/target" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_runtime/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
@@ -391,6 +392,7 @@
       <excludeFolder url="file://$MODULE_DIR$/ml/net/tcp/server/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/udp/client/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/udp/server/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ml/net/use_build/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/use_dns/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/use_ipnet/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/net/use_mio/target" />
