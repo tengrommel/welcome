@@ -7,7 +7,6 @@ pub async fn get_todos(client: &Client) -> Result<Vec<TodoList>, AppError> {
     let statement = client
         .prepare("select * from todo_list order by id desc")
         .await.map_err(AppError::db_error)?;
-
     let todos = client
         .query(&statement, &[])
         .await.map_err(AppError::db_error)?
@@ -34,7 +33,6 @@ pub async fn create_todo(client: &Client, title: String) -> Result<TodoList, App
     let statement = client
         .prepare("insert into todo_list (title) values ($1) returning id, title")
         .await.map_err(AppError::db_error)?;
-
     client
         .query(&statement, &[&title])
         .await.map_err(AppError::db_error)?
@@ -53,11 +51,9 @@ pub async fn check_todo(client: &Client, list_id: i32, item_id: i32) -> Result<b
     let statement = client
         .prepare("update todo_item set checked = true where list_id = $1 and id = $2 and checked = false")
         .await.map_err(AppError::db_error)?;
-
     let result = client
         .execute(&statement, &[&list_id, &item_id])
         .await.map_err(AppError::db_error)?;
-
     match result {
         ref updated if *updated == 1 => Ok(true),
         _ => Ok(false),
