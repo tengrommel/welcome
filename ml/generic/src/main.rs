@@ -1,3 +1,5 @@
+use std::env;
+use std::fs;
 #[derive(Debug)]
 struct Point<T, U> {
     x: T,
@@ -18,4 +20,15 @@ fn main() {
     let p2 = Point{x:"hello", y:'c'};
     let p3 = p1.mixup(p2);
     println!("p3: {:?}", p3);
+    let args: Vec<String> = env::args().collect();
+
+    let query = &args[1];
+    let filename = &args[2];
+    // println!("{:?}", args);
+    println!("{}", query);
+    println!("{}", filename);
+
+    println!("In file {}", filename);
+    let contents = fs::read_to_string(filename).expect("can't reading the file");
+    println!("With text:\n {}", contents);
 }
