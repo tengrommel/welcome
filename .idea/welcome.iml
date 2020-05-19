@@ -320,6 +320,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ml/net/serde/client/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ml/net/use_build/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ml/net/use_c/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ml/generic/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_client/target" />
       <excludeFolder url="file://$MODULE_DIR$/async/tokio_runtime/target" />
       <excludeFolder url="file://$MODULE_DIR$/blockchain/core/target" />
@@ -381,6 +382,7 @@
       <excludeFolder url="file://$MODULE_DIR$/ml/data_structures/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/enumerate/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/error/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ml/generic/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/genericity/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/get_trait/target" />
       <excludeFolder url="file://$MODULE_DIR$/ml/learn_option/target" />
