@@ -1,0 +1,11 @@
+/home/teng/CLionProjects/welcome/ml/net/smtp_ex/target/rls/debug/deps/memchr-de8c09280e830849.rmeta: /home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/lib.rs /home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/fallback.rs /home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/iter.rs /home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/naive.rs /home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/x86/mod.rs /home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/x86/avx.rs /home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/x86/sse2.rs
+
+/home/teng/CLionProjects/welcome/ml/net/smtp_ex/target/rls/debug/deps/memchr-de8c09280e830849.d: /home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/lib.rs /home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/fallback.rs /home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/iter.rs /home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/naive.rs /home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/x86/mod.rs /home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/x86/avx.rs /home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/x86/sse2.rs
+
+/home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/lib.rs:
+/home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/fallback.rs:
+/home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/iter.rs:
+/home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/naive.rs:
+/home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/x86/mod.rs:
+/home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/x86/avx.rs:
+/home/teng/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.3/src/x86/sse2.rs:
